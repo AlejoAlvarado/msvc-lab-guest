@@ -101,7 +101,7 @@ public class GuestHandler {
                         return guestRequestMono
                                 .flatMap(rq -> guestService.update(buildGuest(rq, id, guest)))
                                 .flatMap(roomDb -> ServerResponse
-                                        .created(URI.create("/room/".concat(roomDb.getId())))
+                                        .created(URI.create("/guests/".concat(roomDb.getId())))
                                         .contentType(MediaType.APPLICATION_JSON)
                                         .body(BodyInserters.fromValue(roomDb)));
                     }
