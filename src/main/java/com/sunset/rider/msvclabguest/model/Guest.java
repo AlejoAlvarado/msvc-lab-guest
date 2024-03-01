@@ -18,6 +18,8 @@ public class Guest {
     private String lastName;
     private GuestType type;
     private String email;
+    private String phoneNumber;
+    private String password;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDateTime createdAt;
     @DateTimeFormat(pattern = "yyyy-MM-dd")

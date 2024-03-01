@@ -13,5 +13,5 @@ import org.springframework.data.annotation.Id;
 public class GuestType {
     @Id
     private String id;
-    private String nombre;
+    private String name;
 }
